@@ -30,6 +30,4 @@ io.on('connection', socket => {
 
 });
 
-httpServer.listen(3000, () => {
-  console.log('go to http://localhost:3000');
-});
+httpServer.listen(process.env.PORT || 5000);
